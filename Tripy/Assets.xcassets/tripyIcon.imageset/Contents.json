@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tripyIcon.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
