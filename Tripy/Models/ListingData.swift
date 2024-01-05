@@ -33,10 +33,10 @@ struct ListingDetails: Codable, Hashable, Identifiable {
     let price: Int?
     let review_scores_rating: Int?
     let property_type: String?
-//    let accommodates: Int?
-//    let bathrooms: Int?
-//    let bedrooms: Int?
-//    let beds: Int?
+    let accommodates: Int?
+    let bathrooms: Int?
+    let bedrooms: Int?
+    let beds: Int?
     let number_of_reviews: Int?
     let latitude: String?
     let longitude: String?

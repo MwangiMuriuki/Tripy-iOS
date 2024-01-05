@@ -59,6 +59,10 @@
 		1939FC102B47E34D008F610A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939FC0F2B47E34D008F610A /* DataManager.swift */; };
 		1939FC122B47E92B008F610A /* ListingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939FC112B47E92B008F610A /* ListingDetailView.swift */; };
 		1939FC152B47FE4C008F610A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1939FC142B47FE4C008F610A /* SDWebImageSwiftUI */; };
+		1939FC182B4807DF008F610A /* PropertyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939FC172B4807DF008F610A /* PropertyDescriptionView.swift */; };
+		1939FC1B2B480C14008F610A /* PropertyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939FC1A2B480C14008F610A /* PropertyMapView.swift */; };
+		194642C92B48132400A5DD78 /* ListingDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194642C82B48132400A5DD78 /* ListingDetailsViewModel.swift */; };
+		194642CB2B48247D00A5DD78 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194642CA2B48247D00A5DD78 /* CalendarView.swift */; };
 		A3AB0C8020191A66224463EB /* Pods_Tripy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEC5915DDDEAD1144080A67 /* Pods_Tripy.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +93,10 @@
 		1939FC0C2B47E2D9008F610A /* ListingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsViewModel.swift; sourceTree = "<group>"; };
 		1939FC0F2B47E34D008F610A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		1939FC112B47E92B008F610A /* ListingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailView.swift; sourceTree = "<group>"; };
+		1939FC172B4807DF008F610A /* PropertyDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionView.swift; sourceTree = "<group>"; };
+		1939FC1A2B480C14008F610A /* PropertyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyMapView.swift; sourceTree = "<group>"; };
+		194642C82B48132400A5DD78 /* ListingDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailsViewModel.swift; sourceTree = "<group>"; };
+		194642CA2B48247D00A5DD78 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		3BBB4C62871EB93822C1433D /* Pods-Tripy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tripy.debug.xcconfig"; path = "Target Support Files/Pods-Tripy/Pods-Tripy.debug.xcconfig"; sourceTree = "<group>"; };
 		949CF24DFE4670D070A2E673 /* Pods-Tripy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tripy.release.xcconfig"; path = "Target Support Files/Pods-Tripy/Pods-Tripy.release.xcconfig"; sourceTree = "<group>"; };
 		DEEC5915DDDEAD1144080A67 /* Pods_Tripy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tripy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,8 +201,8 @@
 				1939FB932B46EEDE008F610A /* MainView.swift */,
 				1939FBE32B47191F008F610A /* Authentication */,
 				1939FBF12B47324F008F610A /* Home */,
+				1939FC162B4806DF008F610A /* Listings */,
 				1939FBEB2B4727D8008F610A /* CustomItems */,
-				1939FC112B47E92B008F610A /* ListingDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,6 +236,7 @@
 		1939FBEB2B4727D8008F610A /* CustomItems */ = {
 			isa = PBXGroup;
 			children = (
+				1939FC192B480BF8008F610A /* Map */,
 				1939FC072B47E16B008F610A /* Listings */,
 				1939FBF02B472A61008F610A /* TextFields */,
 			);
@@ -255,7 +264,7 @@
 		1939FBF82B4747F3008F610A /* VewModels */ = {
 			isa = PBXGroup;
 			children = (
-				1939FC0B2B47E2C8008F610A /* Others */,
+				1939FC0B2B47E2C8008F610A /* Listings */,
 				1939FC0A2B47E2B4008F610A /* Authentication */,
 			);
 			path = VewModels;
@@ -274,6 +283,7 @@
 			children = (
 				1939FC052B47E15F008F610A /* ListingsCardView.swift */,
 				1939FC082B47E185008F610A /* ListingsCarousel.swift */,
+				194642CA2B48247D00A5DD78 /* CalendarView.swift */,
 			);
 			path = Listings;
 			sourceTree = "<group>";
@@ -288,12 +298,13 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
-		1939FC0B2B47E2C8008F610A /* Others */ = {
+		1939FC0B2B47E2C8008F610A /* Listings */ = {
 			isa = PBXGroup;
 			children = (
 				1939FC0C2B47E2D9008F610A /* ListingsViewModel.swift */,
+				194642C82B48132400A5DD78 /* ListingDetailsViewModel.swift */,
 			);
-			path = Others;
+			path = Listings;
 			sourceTree = "<group>";
 		};
 		1939FC0E2B47E32A008F610A /* Services */ = {
@@ -302,6 +313,23 @@
 				1939FC0F2B47E34D008F610A /* DataManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		1939FC162B4806DF008F610A /* Listings */ = {
+			isa = PBXGroup;
+			children = (
+				1939FC112B47E92B008F610A /* ListingDetailView.swift */,
+				1939FC172B4807DF008F610A /* PropertyDescriptionView.swift */,
+			);
+			path = Listings;
+			sourceTree = "<group>";
+		};
+		1939FC192B480BF8008F610A /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				1939FC1A2B480C14008F610A /* PropertyMapView.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		20A340F76C33C8133182B2A8 /* Frameworks */ = {
@@ -333,6 +361,7 @@
 				1939FB8B2B46EEDE008F610A /* Frameworks */,
 				1939FB8C2B46EEDE008F610A /* Resources */,
 				2C4C8D8EF5A1F35C12248C37 /* [CP] Embed Pods Frameworks */,
+				8AD67D64EB9ACCD5B2A82B11 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -464,6 +493,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8AD67D64EB9ACCD5B2A82B11 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tripy/Pods-Tripy-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tripy/Pods-Tripy-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tripy/Pods-Tripy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -473,18 +519,22 @@
 			files = (
 				1939FBF52B47339D008F610A /* SearchBarView.swift in Sources */,
 				1939FBED2B4727F7008F610A /* CustomAuthTextField.swift in Sources */,
+				194642CB2B48247D00A5DD78 /* CalendarView.swift in Sources */,
 				1939FC122B47E92B008F610A /* ListingDetailView.swift in Sources */,
 				1939FC002B475969008F610A /* MainViewViewModel.swift in Sources */,
+				1939FC1B2B480C14008F610A /* PropertyMapView.swift in Sources */,
 				1939FC0D2B47E2D9008F610A /* ListingsViewModel.swift in Sources */,
 				1939FC062B47E15F008F610A /* ListingsCardView.swift in Sources */,
 				1939FC042B47CF90008F610A /* AppDelegate.swift in Sources */,
 				1939FBFA2B47481D008F610A /* LoginViewModel.swift in Sources */,
 				1939FBF32B473262008F610A /* HomePage.swift in Sources */,
 				1939FBEF2B4728CA008F610A /* CustomSecureTextField.swift in Sources */,
+				194642C92B48132400A5DD78 /* ListingDetailsViewModel.swift in Sources */,
 				1939FBFE2B475716008F610A /* UserModel.swift in Sources */,
 				1939FB942B46EEDE008F610A /* MainView.swift in Sources */,
 				1939FBEA2B4724CD008F610A /* Extensions.swift in Sources */,
 				1939FBFC2B47506E008F610A /* RegisterViewModel.swift in Sources */,
+				1939FC182B4807DF008F610A /* PropertyDescriptionView.swift in Sources */,
 				1939FBE52B47202D008F610A /* RegisterView.swift in Sources */,
 				1939FB922B46EEDE008F610A /* TripyApp.swift in Sources */,
 				1939FC102B47E34D008F610A /* DataManager.swift in Sources */,

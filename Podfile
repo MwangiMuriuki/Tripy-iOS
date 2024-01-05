@@ -8,5 +8,6 @@ target 'Tripy' do
   # Pods for Tripy
 pod 'GoogleSignIn'
 pod 'GoogleSignInSwiftSupport'
+pod 'GoogleMaps'
 
 end

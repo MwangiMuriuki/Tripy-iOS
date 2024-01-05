@@ -9,12 +9,15 @@ import Foundation
 import SwiftUI
 import FirebaseCore
 import GoogleSignIn
+import GoogleMaps
 
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    FirebaseApp.configure()
+      FirebaseApp.configure()
+      GMSServices.provideAPIKey("AIzaSyCVjZWjSI5N4O57UCpyolFeJWQnyKVK1_o")
+
 
     return true
   }

@@ -16,7 +16,6 @@ struct ListingsCarousel: View {
     var body: some View {
         TabView{
             ForEach(photoItems, id: \.self) { item in
-
                 WebImage(url: URL(string: item))
                     .onSuccess { image, data, cacheType in
 
@@ -32,6 +31,3 @@ struct ListingsCarousel: View {
     }
 }
 
-//#Preview {
-//    ListingsCarousel(model: <#ListingData#>)
-//}
