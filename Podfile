@@ -9,5 +9,6 @@ target 'Tripy' do
 pod 'GoogleSignIn'
 pod 'GoogleSignInSwiftSupport'
 pod 'GoogleMaps'
+pod 'HorizonCalendar'
 
 end

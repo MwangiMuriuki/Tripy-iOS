@@ -21,10 +21,25 @@ struct ListingsCardView: View {
             VStack(alignment: .leading, spacing: 8, content: {
 
                 HStack(alignment: .center, content: {
-                    Text(model.host_location ?? "Listing")
-                        .font(.subheadline)
-                        .fontWeight(.medium)
-                        .foregroundStyle(.black)
+
+                    HStack(spacing: 5, content: {
+                        Text(model.neighbourhood_cleansed ?? "Neighborhood")
+                            .font(.subheadline)
+                            .fontWeight(.medium)
+                            .foregroundStyle(.black)
+                        +
+
+                        Text(",")
+                            .font(.subheadline)
+                            .fontWeight(.medium)
+                            .foregroundStyle(.black)
+
+
+                        Text(model.smart_location ?? "")
+                            .font(.subheadline)
+                            .fontWeight(.medium)
+                            .foregroundStyle(.black)
+                    })
 
                     Spacer(minLength: 0)
 
@@ -67,7 +82,7 @@ struct ListingsCardView: View {
                     .foregroundStyle(.black)
                 +
 
-                Text(" night")
+                Text("/Night")
                     .font(.subheadline)
                     .fontWeight(.regular)
                     .foregroundStyle(.black)

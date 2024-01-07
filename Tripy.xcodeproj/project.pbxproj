@@ -62,7 +62,12 @@
 		1939FC182B4807DF008F610A /* PropertyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939FC172B4807DF008F610A /* PropertyDescriptionView.swift */; };
 		1939FC1B2B480C14008F610A /* PropertyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939FC1A2B480C14008F610A /* PropertyMapView.swift */; };
 		194642C92B48132400A5DD78 /* ListingDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194642C82B48132400A5DD78 /* ListingDetailsViewModel.swift */; };
-		194642CB2B48247D00A5DD78 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194642CA2B48247D00A5DD78 /* CalendarView.swift */; };
+		194642CF2B48758000A5DD78 /* SearchFiltersPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194642CE2B48758000A5DD78 /* SearchFiltersPageView.swift */; };
+		194642D42B48868100A5DD78 /* CollapsedFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194642D32B48868100A5DD78 /* CollapsedFilterView.swift */; };
+		19614CB32B49CA1D0089FC01 /* CustomToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19614CB22B49CA1D0089FC01 /* CustomToggle.swift */; };
+		197D1E972B499B1A0088D2C9 /* AmenityFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D1E962B499B1A0088D2C9 /* AmenityFilterView.swift */; };
+		197D1E9A2B49BD580088D2C9 /* CheckBoxToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D1E992B49BD580088D2C9 /* CheckBoxToggle.swift */; };
+		197D1E9D2B49C49C0088D2C9 /* MultiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 197D1E9C2B49C49C0088D2C9 /* MultiPicker */; };
 		A3AB0C8020191A66224463EB /* Pods_Tripy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEC5915DDDEAD1144080A67 /* Pods_Tripy.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,7 +101,11 @@
 		1939FC172B4807DF008F610A /* PropertyDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionView.swift; sourceTree = "<group>"; };
 		1939FC1A2B480C14008F610A /* PropertyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyMapView.swift; sourceTree = "<group>"; };
 		194642C82B48132400A5DD78 /* ListingDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailsViewModel.swift; sourceTree = "<group>"; };
-		194642CA2B48247D00A5DD78 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		194642CE2B48758000A5DD78 /* SearchFiltersPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFiltersPageView.swift; sourceTree = "<group>"; };
+		194642D32B48868100A5DD78 /* CollapsedFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsedFilterView.swift; sourceTree = "<group>"; };
+		19614CB22B49CA1D0089FC01 /* CustomToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggle.swift; sourceTree = "<group>"; };
+		197D1E962B499B1A0088D2C9 /* AmenityFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenityFilterView.swift; sourceTree = "<group>"; };
+		197D1E992B49BD580088D2C9 /* CheckBoxToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxToggle.swift; sourceTree = "<group>"; };
 		3BBB4C62871EB93822C1433D /* Pods-Tripy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tripy.debug.xcconfig"; path = "Target Support Files/Pods-Tripy/Pods-Tripy.debug.xcconfig"; sourceTree = "<group>"; };
 		949CF24DFE4670D070A2E673 /* Pods-Tripy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tripy.release.xcconfig"; path = "Target Support Files/Pods-Tripy/Pods-Tripy.release.xcconfig"; sourceTree = "<group>"; };
 		DEEC5915DDDEAD1144080A67 /* Pods_Tripy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tripy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +144,7 @@
 				1939FC152B47FE4C008F610A /* SDWebImageSwiftUI in Frameworks */,
 				1939FBD02B470C52008F610A /* FirebaseMessaging in Frameworks */,
 				1939FBCC2B470C52008F610A /* FirebaseInstallations in Frameworks */,
+				197D1E9D2B49C49C0088D2C9 /* MultiPicker in Frameworks */,
 				A3AB0C8020191A66224463EB /* Pods_Tripy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,8 +173,8 @@
 		1939FB902B46EEDE008F610A /* Tripy */ = {
 			isa = PBXGroup;
 			children = (
-				1939FC0E2B47E32A008F610A /* Services */,
 				1939FC012B476215008F610A /* Info.plist */,
+				1939FC0E2B47E32A008F610A /* Services */,
 				1939FBE82B4724C0008F610A /* Extensions */,
 				1939FBA12B46F0BE008F610A /* Resources */,
 				1939FBDE2B471670008F610A /* Models */,
@@ -202,7 +212,7 @@
 				1939FBE32B47191F008F610A /* Authentication */,
 				1939FBF12B47324F008F610A /* Home */,
 				1939FC162B4806DF008F610A /* Listings */,
-				1939FBEB2B4727D8008F610A /* CustomItems */,
+				1939FBEB2B4727D8008F610A /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,14 +243,17 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		1939FBEB2B4727D8008F610A /* CustomItems */ = {
+		1939FBEB2B4727D8008F610A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				197D1E982B49BD350088D2C9 /* UIComponents */,
+				194642D82B48A07B00A5DD78 /* Calendar */,
+				194642D22B48866D00A5DD78 /* Search */,
 				1939FC192B480BF8008F610A /* Map */,
 				1939FC072B47E16B008F610A /* Listings */,
 				1939FBF02B472A61008F610A /* TextFields */,
 			);
-			path = CustomItems;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		1939FBF02B472A61008F610A /* TextFields */ = {
@@ -283,7 +296,6 @@
 			children = (
 				1939FC052B47E15F008F610A /* ListingsCardView.swift */,
 				1939FC082B47E185008F610A /* ListingsCarousel.swift */,
-				194642CA2B48247D00A5DD78 /* CalendarView.swift */,
 			);
 			path = Listings;
 			sourceTree = "<group>";
@@ -320,6 +332,8 @@
 			children = (
 				1939FC112B47E92B008F610A /* ListingDetailView.swift */,
 				1939FC172B4807DF008F610A /* PropertyDescriptionView.swift */,
+				194642CE2B48758000A5DD78 /* SearchFiltersPageView.swift */,
+				197D1E962B499B1A0088D2C9 /* AmenityFilterView.swift */,
 			);
 			path = Listings;
 			sourceTree = "<group>";
@@ -330,6 +344,30 @@
 				1939FC1A2B480C14008F610A /* PropertyMapView.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		194642D22B48866D00A5DD78 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				194642D32B48868100A5DD78 /* CollapsedFilterView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		194642D82B48A07B00A5DD78 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		197D1E982B49BD350088D2C9 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				197D1E992B49BD580088D2C9 /* CheckBoxToggle.swift */,
+				19614CB22B49CA1D0089FC01 /* CustomToggle.swift */,
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 		20A340F76C33C8133182B2A8 /* Frameworks */ = {
@@ -397,6 +435,7 @@
 				1939FBD72B470C52008F610A /* FirebaseStorage */,
 				1939FBD92B470C52008F610A /* FirebaseStorageCombine-Community */,
 				1939FC142B47FE4C008F610A /* SDWebImageSwiftUI */,
+				197D1E9C2B49C49C0088D2C9 /* MultiPicker */,
 			);
 			productName = Tripy;
 			productReference = 1939FB8E2B46EEDE008F610A /* Tripy.app */;
@@ -429,6 +468,7 @@
 			packageReferences = (
 				1939FBA42B470C52008F610A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				1939FC132B47FE4C008F610A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				197D1E9B2B49C49C0088D2C9 /* XCRemoteSwiftPackageReference "MultiPicker" */,
 			);
 			productRefGroup = 1939FB8F2B46EEDE008F610A /* Products */;
 			projectDirPath = "";
@@ -519,7 +559,6 @@
 			files = (
 				1939FBF52B47339D008F610A /* SearchBarView.swift in Sources */,
 				1939FBED2B4727F7008F610A /* CustomAuthTextField.swift in Sources */,
-				194642CB2B48247D00A5DD78 /* CalendarView.swift in Sources */,
 				1939FC122B47E92B008F610A /* ListingDetailView.swift in Sources */,
 				1939FC002B475969008F610A /* MainViewViewModel.swift in Sources */,
 				1939FC1B2B480C14008F610A /* PropertyMapView.swift in Sources */,
@@ -528,14 +567,19 @@
 				1939FC042B47CF90008F610A /* AppDelegate.swift in Sources */,
 				1939FBFA2B47481D008F610A /* LoginViewModel.swift in Sources */,
 				1939FBF32B473262008F610A /* HomePage.swift in Sources */,
+				194642CF2B48758000A5DD78 /* SearchFiltersPageView.swift in Sources */,
 				1939FBEF2B4728CA008F610A /* CustomSecureTextField.swift in Sources */,
 				194642C92B48132400A5DD78 /* ListingDetailsViewModel.swift in Sources */,
+				194642D42B48868100A5DD78 /* CollapsedFilterView.swift in Sources */,
 				1939FBFE2B475716008F610A /* UserModel.swift in Sources */,
 				1939FB942B46EEDE008F610A /* MainView.swift in Sources */,
+				197D1E972B499B1A0088D2C9 /* AmenityFilterView.swift in Sources */,
 				1939FBEA2B4724CD008F610A /* Extensions.swift in Sources */,
 				1939FBFC2B47506E008F610A /* RegisterViewModel.swift in Sources */,
+				197D1E9A2B49BD580088D2C9 /* CheckBoxToggle.swift in Sources */,
 				1939FC182B4807DF008F610A /* PropertyDescriptionView.swift in Sources */,
 				1939FBE52B47202D008F610A /* RegisterView.swift in Sources */,
+				19614CB32B49CA1D0089FC01 /* CustomToggle.swift in Sources */,
 				1939FB922B46EEDE008F610A /* TripyApp.swift in Sources */,
 				1939FC102B47E34D008F610A /* DataManager.swift in Sources */,
 				1939FC092B47E185008F610A /* ListingsCarousel.swift in Sources */,
@@ -774,6 +818,14 @@
 				minimumVersion = 2.2.6;
 			};
 		};
+		197D1E9B2B49C49C0088D2C9 /* XCRemoteSwiftPackageReference "MultiPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/toastersocks/MultiPicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -916,6 +968,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1939FC132B47FE4C008F610A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		197D1E9C2B49C49C0088D2C9 /* MultiPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 197D1E9B2B49C49C0088D2C9 /* XCRemoteSwiftPackageReference "MultiPicker" */;
+			productName = MultiPicker;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

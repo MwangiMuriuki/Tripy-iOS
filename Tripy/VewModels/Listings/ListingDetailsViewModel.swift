@@ -20,8 +20,5 @@ class ListingDetailsViewModel: ObservableObject{
         return convertedLongitude
     }
 
-    public func fetchPhotos(){
-        
-    }
 }
 

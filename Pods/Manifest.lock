@@ -20,11 +20,13 @@ PODS:
     - AppAuth/Core (~> 1.6)
     - GTMSessionFetcher/Core (< 4.0, >= 1.5)
   - GTMSessionFetcher/Core (3.2.0)
+  - HorizonCalendar (2.0.0)
 
 DEPENDENCIES:
   - GoogleMaps
   - GoogleSignIn
   - GoogleSignInSwiftSupport
+  - HorizonCalendar
 
 SPEC REPOS:
   trunk:
@@ -34,6 +36,7 @@ SPEC REPOS:
     - GoogleSignInSwiftSupport
     - GTMAppAuth
     - GTMSessionFetcher
+    - HorizonCalendar
 
 SPEC CHECKSUMS:
   AppAuth: 3bb1d1cd9340bd09f5ed189fb00b1cc28e1e8570
@@ -42,7 +45,8 @@ SPEC CHECKSUMS:
   GoogleSignInSwiftSupport: 6ca6e5a978faa4cd43451b6b9b38b96ab5db1734
   GTMAppAuth: 99fb010047ba3973b7026e45393f51f27ab965ae
   GTMSessionFetcher: 41b9ef0b4c08a6db4b7eb51a21ae5183ec99a2c8
+  HorizonCalendar: 21e600058a8f4d407c79ef7848beda692c53a484
 
-PODFILE CHECKSUM: ae6b060efdb10327b50f216847a7bf7877554d0b
+PODFILE CHECKSUM: 53fdf87653162980d1326823fd0b36a65fec4615
 
 COCOAPODS: 1.12.1

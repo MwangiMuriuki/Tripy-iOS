@@ -8,45 +8,59 @@
 import SwiftUI
 
 struct SearchBarView: View {
-    @Binding var searchText: String
-    @Binding var isEditing: Bool
+    @Binding var location: String
+    @State private var showAmenityFiltersPage = false
 
 
     var body: some View {
         HStack{
-            TextField("Where to?", text: $searchText)
-                .padding(10)
-                .padding(.horizontal, 24)
-                .background(Color(.systemGray6))
-                .clipShape(Capsule())
-                .overlay(
-                    HStack{
-                        Image(systemName: "magnifyingglass")
+            HStack{
+                Image(systemName: "magnifyingglass")
+                    .foregroundStyle(.labelColorPrimary)
+
+                if !location.isEmpty{
+                    VStack(alignment: .leading, content: {
+                        Text(location)
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.labelColorPrimary)
+
+                        Text("Any Week • Add guests")
+                            .font(.caption2)
                             .foregroundStyle(.gray)
-                            .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                            .padding(.leading, 8)
-                    }
-                )
-                .onTapGesture {
-                    isEditing = true
+                    })
+
+                }
+                else {
+                    VStack(alignment: .leading, content: {
+                        Text("Where are you headed?")
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.labelColorPrimary)
+
+                        Text("Anywhere • Any Week • Add guests")
+                            .font(.caption2)
+                            .foregroundStyle(.gray)
+                    })
                 }
 
-            Button(action: {
-                isEditing = false
-                searchText = ""
-                UIApplication.shared.endEditing()
-            }, label: {
-                Image(systemName: "magnifyingglass")
-                    .foregroundStyle(.accent)
-                    .fontWeight(.medium)
-                    .padding(.trailing, 8)
-                    .transition(.move(edge: .trailing))
-                    .animation(.default, value: 1)
-            })
+                Spacer()
+
+            }
+            .padding(.horizontal)
+            .padding(.vertical, 8)
+            .overlay {
+                Capsule()
+                    .stroke(lineWidth: 0.6)
+                    .foregroundStyle(Color(.systemGray4))
+                    .shadow(color: .black.opacity(0.2),radius: 3)
+            }
+            .padding()
         }
+
     }
 }
 
 #Preview {
-    SearchBarView(searchText: .constant(""), isEditing: .constant(false))
+    SearchBarView(location: .constant(""))
 }
