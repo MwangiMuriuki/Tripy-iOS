@@ -129,6 +129,7 @@ struct SearchFiltersPageView: View {
             }
 
 
+            //Guests
             VStack{
                 if selectedOption == .guests {
                     VStack(alignment: .leading, spacing: 10){

@@ -328,9 +328,8 @@ struct ListingDetailView: View {
                     .foregroundStyle(.primary)
                     .lineLimit(2)
 
-                PropertyMapView(model: model)
-                    .frame(height: 230)
-
+                CustomCalendarView(model: model)
+                    .scaledToFit()
 
             })
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -368,9 +367,9 @@ struct ListingDetailView: View {
 
                     Spacer()
 
-                    Button(action: {
-
-                    }, label: {
+                    NavigationLink {
+                        BookingMainScreen(model: model).navigationTitle("Confirm and pay")
+                    } label: {
                         Text("Book Now")
                             .foregroundStyle(.white)
                             .font(.subheadline)
@@ -378,7 +377,19 @@ struct ListingDetailView: View {
                             .frame(width: 140, height: 40)
                             .background(.accent)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
-                    })
+                    }
+
+//                    Button(action: {
+//
+//                    }, label: {
+//                        Text("Book Now")
+//                            .foregroundStyle(.white)
+//                            .font(.subheadline)
+//                            .fontWeight(.semibold)
+//                            .frame(width: 140, height: 40)
+//                            .background(.accent)
+//                            .clipShape(RoundedRectangle(cornerRadius: 8))
+//                    })
                 }).padding(.horizontal, 32)
             }
             .background(.white)

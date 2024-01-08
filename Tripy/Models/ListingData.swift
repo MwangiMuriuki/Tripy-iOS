@@ -20,7 +20,7 @@ struct ListingDetails: Codable, Hashable, Identifiable {
     let description: String?
     let experiences_offered: String?
     let photos: [String]?
-    let booked_dates: [String]?
+    let booked_dates: [String]
     let neighborhood_overview: String?
     let notes: String?
     let transit: String?

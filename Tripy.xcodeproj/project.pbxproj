@@ -64,7 +64,13 @@
 		194642C92B48132400A5DD78 /* ListingDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194642C82B48132400A5DD78 /* ListingDetailsViewModel.swift */; };
 		194642CF2B48758000A5DD78 /* SearchFiltersPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194642CE2B48758000A5DD78 /* SearchFiltersPageView.swift */; };
 		194642D42B48868100A5DD78 /* CollapsedFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194642D32B48868100A5DD78 /* CollapsedFilterView.swift */; };
-		19614CB32B49CA1D0089FC01 /* CustomToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19614CB22B49CA1D0089FC01 /* CustomToggle.swift */; };
+		19614CB52B4B3CA50089FC01 /* AmenityCheckListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19614CB42B4B3CA50089FC01 /* AmenityCheckListView.swift */; };
+		19614CBA2B4B59B70089FC01 /* FilterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19614CB92B4B59B70089FC01 /* FilterManager.swift */; };
+		19614CBF2B4B626F0089FC01 /* FilterDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19614CBE2B4B626F0089FC01 /* FilterDecorator.swift */; };
+		19614CC12B4B7DFF0089FC01 /* AmenityFiltersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19614CC02B4B7DFF0089FC01 /* AmenityFiltersViewModel.swift */; };
+		19614CC32B4B91DC0089FC01 /* CustomCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19614CC22B4B91DC0089FC01 /* CustomCalendarView.swift */; };
+		19614CC52B4B9FCD0089FC01 /* DateDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19614CC42B4B9FCD0089FC01 /* DateDatabase.swift */; };
+		19614CC82B4BACAC0089FC01 /* BookingMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19614CC72B4BACAC0089FC01 /* BookingMainScreen.swift */; };
 		197D1E972B499B1A0088D2C9 /* AmenityFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D1E962B499B1A0088D2C9 /* AmenityFilterView.swift */; };
 		197D1E9A2B49BD580088D2C9 /* CheckBoxToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D1E992B49BD580088D2C9 /* CheckBoxToggle.swift */; };
 		197D1E9D2B49C49C0088D2C9 /* MultiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 197D1E9C2B49C49C0088D2C9 /* MultiPicker */; };
@@ -103,7 +109,13 @@
 		194642C82B48132400A5DD78 /* ListingDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailsViewModel.swift; sourceTree = "<group>"; };
 		194642CE2B48758000A5DD78 /* SearchFiltersPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFiltersPageView.swift; sourceTree = "<group>"; };
 		194642D32B48868100A5DD78 /* CollapsedFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsedFilterView.swift; sourceTree = "<group>"; };
-		19614CB22B49CA1D0089FC01 /* CustomToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggle.swift; sourceTree = "<group>"; };
+		19614CB42B4B3CA50089FC01 /* AmenityCheckListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenityCheckListView.swift; sourceTree = "<group>"; };
+		19614CB92B4B59B70089FC01 /* FilterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterManager.swift; sourceTree = "<group>"; };
+		19614CBE2B4B626F0089FC01 /* FilterDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDecorator.swift; sourceTree = "<group>"; };
+		19614CC02B4B7DFF0089FC01 /* AmenityFiltersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenityFiltersViewModel.swift; sourceTree = "<group>"; };
+		19614CC22B4B91DC0089FC01 /* CustomCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalendarView.swift; sourceTree = "<group>"; };
+		19614CC42B4B9FCD0089FC01 /* DateDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDatabase.swift; sourceTree = "<group>"; };
+		19614CC72B4BACAC0089FC01 /* BookingMainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingMainScreen.swift; sourceTree = "<group>"; };
 		197D1E962B499B1A0088D2C9 /* AmenityFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenityFilterView.swift; sourceTree = "<group>"; };
 		197D1E992B49BD580088D2C9 /* CheckBoxToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxToggle.swift; sourceTree = "<group>"; };
 		3BBB4C62871EB93822C1433D /* Pods-Tripy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tripy.debug.xcconfig"; path = "Target Support Files/Pods-Tripy/Pods-Tripy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,7 +185,6 @@
 		1939FB902B46EEDE008F610A /* Tripy */ = {
 			isa = PBXGroup;
 			children = (
-				1939FC012B476215008F610A /* Info.plist */,
 				1939FC0E2B47E32A008F610A /* Services */,
 				1939FBE82B4724C0008F610A /* Extensions */,
 				1939FBA12B46F0BE008F610A /* Resources */,
@@ -183,6 +194,7 @@
 				1939FC022B47CF71008F610A /* Helpers */,
 				1939FB912B46EEDE008F610A /* TripyApp.swift */,
 				1939FB952B46EEE0008F610A /* Assets.xcassets */,
+				1939FC012B476215008F610A /* Info.plist */,
 				1939FBF62B474088008F610A /* GoogleService-Info.plist */,
 				1939FB972B46EEE0008F610A /* Preview Content */,
 			);
@@ -210,6 +222,7 @@
 			children = (
 				1939FB932B46EEDE008F610A /* MainView.swift */,
 				1939FBE32B47191F008F610A /* Authentication */,
+				19614CC62B4BAC8E0089FC01 /* Booking */,
 				1939FBF12B47324F008F610A /* Home */,
 				1939FC162B4806DF008F610A /* Listings */,
 				1939FBEB2B4727D8008F610A /* Components */,
@@ -277,6 +290,7 @@
 		1939FBF82B4747F3008F610A /* VewModels */ = {
 			isa = PBXGroup;
 			children = (
+				19614CB62B4B3F320089FC01 /* Filters */,
 				1939FC0B2B47E2C8008F610A /* Listings */,
 				1939FC0A2B47E2B4008F610A /* Authentication */,
 			);
@@ -286,6 +300,7 @@
 		1939FC022B47CF71008F610A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				19614CBD2B4B61DE0089FC01 /* Filters */,
 				1939FC032B47CF90008F610A /* AppDelegate.swift */,
 			);
 			path = Helpers;
@@ -315,6 +330,7 @@
 			children = (
 				1939FC0C2B47E2D9008F610A /* ListingsViewModel.swift */,
 				194642C82B48132400A5DD78 /* ListingDetailsViewModel.swift */,
+				19614CC02B4B7DFF0089FC01 /* AmenityFiltersViewModel.swift */,
 			);
 			path = Listings;
 			sourceTree = "<group>";
@@ -357,15 +373,41 @@
 		194642D82B48A07B00A5DD78 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				19614CC22B4B91DC0089FC01 /* CustomCalendarView.swift */,
+				19614CC42B4B9FCD0089FC01 /* DateDatabase.swift */,
 			);
 			path = Calendar;
+			sourceTree = "<group>";
+		};
+		19614CB62B4B3F320089FC01 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		19614CBD2B4B61DE0089FC01 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				19614CB92B4B59B70089FC01 /* FilterManager.swift */,
+				19614CBE2B4B626F0089FC01 /* FilterDecorator.swift */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		19614CC62B4BAC8E0089FC01 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				19614CC72B4BACAC0089FC01 /* BookingMainScreen.swift */,
+			);
+			path = Booking;
 			sourceTree = "<group>";
 		};
 		197D1E982B49BD350088D2C9 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
 				197D1E992B49BD580088D2C9 /* CheckBoxToggle.swift */,
-				19614CB22B49CA1D0089FC01 /* CustomToggle.swift */,
+				19614CB42B4B3CA50089FC01 /* AmenityCheckListView.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -558,7 +600,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1939FBF52B47339D008F610A /* SearchBarView.swift in Sources */,
+				19614CB52B4B3CA50089FC01 /* AmenityCheckListView.swift in Sources */,
 				1939FBED2B4727F7008F610A /* CustomAuthTextField.swift in Sources */,
+				19614CC32B4B91DC0089FC01 /* CustomCalendarView.swift in Sources */,
 				1939FC122B47E92B008F610A /* ListingDetailView.swift in Sources */,
 				1939FC002B475969008F610A /* MainViewViewModel.swift in Sources */,
 				1939FC1B2B480C14008F610A /* PropertyMapView.swift in Sources */,
@@ -569,17 +613,21 @@
 				1939FBF32B473262008F610A /* HomePage.swift in Sources */,
 				194642CF2B48758000A5DD78 /* SearchFiltersPageView.swift in Sources */,
 				1939FBEF2B4728CA008F610A /* CustomSecureTextField.swift in Sources */,
+				19614CC82B4BACAC0089FC01 /* BookingMainScreen.swift in Sources */,
 				194642C92B48132400A5DD78 /* ListingDetailsViewModel.swift in Sources */,
+				19614CBF2B4B626F0089FC01 /* FilterDecorator.swift in Sources */,
 				194642D42B48868100A5DD78 /* CollapsedFilterView.swift in Sources */,
 				1939FBFE2B475716008F610A /* UserModel.swift in Sources */,
 				1939FB942B46EEDE008F610A /* MainView.swift in Sources */,
 				197D1E972B499B1A0088D2C9 /* AmenityFilterView.swift in Sources */,
+				19614CC52B4B9FCD0089FC01 /* DateDatabase.swift in Sources */,
 				1939FBEA2B4724CD008F610A /* Extensions.swift in Sources */,
+				19614CC12B4B7DFF0089FC01 /* AmenityFiltersViewModel.swift in Sources */,
+				19614CBA2B4B59B70089FC01 /* FilterManager.swift in Sources */,
 				1939FBFC2B47506E008F610A /* RegisterViewModel.swift in Sources */,
 				197D1E9A2B49BD580088D2C9 /* CheckBoxToggle.swift in Sources */,
 				1939FC182B4807DF008F610A /* PropertyDescriptionView.swift in Sources */,
 				1939FBE52B47202D008F610A /* RegisterView.swift in Sources */,
-				19614CB32B49CA1D0089FC01 /* CustomToggle.swift in Sources */,
 				1939FB922B46EEDE008F610A /* TripyApp.swift in Sources */,
 				1939FC102B47E34D008F610A /* DataManager.swift in Sources */,
 				1939FC092B47E185008F610A /* ListingsCarousel.swift in Sources */,

@@ -29,6 +29,7 @@ struct HomePage: View {
             else if showAmenityFiltersPage{
                 AmenityFilterView(show: $showAmenityFiltersPage)
                     .environmentObject(viewModel)
+
             }
             else{
                 VStack{
