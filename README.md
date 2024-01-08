@@ -27,6 +27,7 @@ The app shows a list of destinations and gives the user a booking option.
 <img src="https://github.com/MwangiMuriuki/Tripy-iOS/assets/25981643/e6af790c-3b35-4dc9-a18f-9ff27bbe964f.png" data-canonical-src="https://github.com/MwangiMuriuki/Tripy-iOS/assets/25981643/e6af790c-3b35-4dc9-a18f-9ff27bbe964f.png" width="200" height="400"/>
 
 
-## App Video
+## App Demo Video Link:
+https://drive.google.com/file/d/1wJFT4IIr448E7L4di7YiyQiTC5Tb2FXB/view?usp=drive_link
 
 
